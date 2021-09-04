@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>크리니티 통합테스트용 테이블 만들기</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<h1>크리니티 테스트 데이터 생성 포맷</h1>
+
+<h2>크리니티 통합테스트를 할 때 필요한 테스트 데이터들을 자동적으로 생성해주는 사이트</h2>
+
+<h3>
+    <p>**주요 기능**</p>
+    <p>1. 로우와 컬럼을 페이지에서 핸들링</p>
+    <p>2. 클릭시 해당 데이터를 저장하여 포맷을 불러올 수 있게하기</p>
+</h3>
+
+<!-- vue.js 연동 HTML 태그-->
+<div id="app">
+    [[ message ]]
+</div>
+<hr>
+<div id="app2">
+    <span v-bind:title="message">
+        내 위에 잠시 마우스를 올리면 동적으로 바인딩 된 title을 볼 수 있습니다.
+    </span>
+</div>
+<hr>
+<div id="app3">
+    <p v-if="seen">이제 나를 볼 수 있어요.</p>
+</div>
+<hr>
+<div id="app4">
+    <ol>
+        <li v-for="todo in todos">
+            [[ todo.text ]]
+        </li>
+    </ol>
+</div>
+<hr>
+<div id="app5">
+    <p>[[ message ]]</p>
+    <button v-on:click="reverseMessage">메시지 뒤집기</button>
+</div>
+<hr>
+<div id="app6">
+    <p>[[ message ]]</p>
+    <input v-model="message">
+    <button v-on:click="alert">[[message]]</button>
+</div>
+<hr>
+<div id="app_crinity">
+    <input v-model="column" placeholder="행" onfocus="this.placeholder=''">
+    <span>X</span>
+    <input v-model="row" placeholder="열" onfocus="this.placeholder=''">
+    <br><br>
+    <span>테스트 도메인 입력란</span>
+    <br>
+    <input v-model="domain" placeholder="테스트 도메인" onfocus="this.placeholder=''">
+    <button v-on:click="getParam">테스트 데이터 출력</button>
+    <button v-on:click="submit">테스트 데이터 추출(Excel)</button>
+</div>
+
+
+<!-- vue.js script-->
+<script>
+    var app_crinity = new Vue({
+        delimiters : ['[[', ']]'],
+        el : "#app_crinity",
+        data : {
+            row : "",
+            column : "",
+            domain : ""
+        },
+        methods : {
+            getParam : function(){
+                alert("입력한 행은 " + this.column + " 이며, 입력한 열은 " + this.row + " 이며, 기초 데이터는 "+ this.domain +" 입니다.")
+            },
+            inputData(row, column, domain) : function(row, column, domain){
+                alert(row);
+
+            },
+            view : function() {
+
+            },
+            submit : function(){
+                axios.defaults.xsrfCookieName ='csrftoken'
+                axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+                axios.post("http://132.226.232.239:8000/crinity/testdata", {
+                    row : this.row,
+                    column : this.column,
+                    domain : this.domain
+                })
+                .then(function(response){
+                    row = response.data["row"];
+                    column = response.data["column"];
+                    domain = response.data["domain"];
+                    inputData(row, column, domain);
+                })
+                .catch(function(error){
+                    alert(error.message);
+                });
+            },
+
+        }
+    })
+
+    var app = new Vue({
+        // django 와 vue.js는 같은 콧수염 태그를 사용하기 때문에 구분자를 변경해주어야 한다.
+        delimiters : ['[[', ']]'],
+        el : '#app',
+        data : {
+            message : '안녕하세요!'
+        }
+    })
+
+    var app2 = new Vue({
+        delimiters : ['[[', ']]'],
+        el : "#app2",
+        data : {
+            message : '이 페이지는 ' + new Date() + ' 에 로드 되었습니다.'
+        }
+    })
+
+    var app3 = new Vue({
+        delimiters : ['[[', ']]'],
+        el : "#app3",
+        data : {
+            seen : true // DOM의 구조에도 데이터를 바인딩
+        }
+    })
+
+    var app4 = new Vue({
+        delimiters : ['[[', ']]'],
+        el : "#app4",
+        data : {
+            todos : [
+                {text : 'JavaScript 배우기'},
+                {text : 'Vue 배우기'},
+                {text : 'Django 배우기'}
+            ]
+        }
+    })
+
+    // 사용자 입력 핸들링
+    var app5 = new Vue({
+        delimiters : ['[[', ']]'],
+        el : "#app5",
+        data : {
+            message : "안녕하세요! Vue.js!!"
+        },
+        methods : {
+            reverseMessage : function(){
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    })
+
+    // 양방향 바인딩 model 실습
+    var app6 = new Vue({
+        delimiters : ['[[', ']]'],
+        el : "#app6",
+        data : {
+            message : "안녕하세요 Vue!"
+        }
+    })
+</script>
+</body>
+</html>

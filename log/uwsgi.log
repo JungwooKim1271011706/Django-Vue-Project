@@ -1,0 +1,566 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Aug 21 15:26:10 2021] ***
+compiled with version: 8.3.0 on 21 August 2021 15:24:17
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: bf628d4980cf
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5634c0154200
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 7, cores: 2)
+Sat Aug 21 15:29:23 2021 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Aug 21 15:30:16 2021] ***
+compiled with version: 8.3.0 on 21 August 2021 15:24:17
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: 1bccf3be6dc4
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x561a0f51a200
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 7, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/1] 103.203.57.26 () {34 vars in 455 bytes} [Sat Aug 21 16:41:04 2021] GET /echo.php?info=20210821164104 => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/2] 74.120.14.58 () {28 vars in 305 bytes} [Sat Aug 21 19:19:57 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/3] 74.120.14.58 () {34 vars in 440 bytes} [Sat Aug 21 19:19:58 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/4] 45.148.10.241 () {32 vars in 362 bytes} [Sat Aug 21 20:01:53 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/5] 132.145.98.193 () {26 vars in 274 bytes} [Sun Aug 22 02:07:43 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/6] 132.145.98.193 () {32 vars in 467 bytes} [Sun Aug 22 02:07:54 2021] GET /browseDirectory.jsp => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/7] 132.145.98.193 () {32 vars in 433 bytes} [Sun Aug 22 02:07:54 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/8] 132.145.98.193 () {32 vars in 447 bytes} [Sun Aug 22 02:07:54 2021] GET /rs-status => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/9] 132.145.98.193 () {32 vars in 455 bytes} [Sun Aug 22 02:07:54 2021] GET /api/spec.json => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/10] 132.145.98.193 () {32 vars in 429 bytes} [Sun Aug 22 02:07:54 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/12] 132.145.98.193 () {32 vars in 440 bytes} [Sun Aug 22 02:07:54 2021] HEAD /trace => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+[pid: 7|app: -1|req: -1/12] 132.145.98.193 () {32 vars in 511 bytes} [Sun Aug 22 02:07:54 2021] GET /console/images/%252E%252E%252Fconsole.portal => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/13] 132.145.98.193 () {32 vars in 463 bytes} [Sun Aug 22 02:07:55 2021] GET /admin/info/config => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/14] 132.145.98.193 () {34 vars in 465 bytes} [Sun Aug 22 02:07:55 2021] POST /sdk => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/15] 132.145.98.193 () {32 vars in 477 bytes} [Sun Aug 22 02:07:55 2021] GET /nmaplowercheck1629598074 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/16] 132.145.98.193 () {32 vars in 457 bytes} [Sun Aug 22 02:07:55 2021] GET /jobtracker.jsp => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/17] 132.145.98.193 () {32 vars in 449 bytes} [Sun Aug 22 02:07:55 2021] GET /robots.txt => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/18] 132.145.98.193 () {36 vars in 501 bytes} [Sun Aug 22 02:07:55 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/19] 132.145.98.193 () {34 vars in 449 bytes} [Sun Aug 22 02:07:55 2021] PROPFIND / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/20] 132.145.98.193 () {34 vars in 449 bytes} [Sun Aug 22 02:07:55 2021] PROPFIND / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/21] 132.145.98.193 () {32 vars in 449 bytes} [Sun Aug 22 02:07:55 2021] GET /status.jsp => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/22] 132.145.98.193 () {32 vars in 433 bytes} [Sun Aug 22 02:07:55 2021] GET /ui => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+[pid: 7|app: -1|req: -1/23] 132.145.98.193 () {32 vars in 430 bytes} [Sun Aug 22 02:07:55 2021] GYAL / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/24] 132.145.98.193 () {32 vars in 511 bytes} [Sun Aug 22 02:07:55 2021] GET /console/images/%252e%252e%252fconsole.portal => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/25] 132.145.98.193 () {32 vars in 439 bytes} [Sun Aug 22 02:07:55 2021] GET /HNAP1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/26] 132.145.98.193 () {32 vars in 459 bytes} [Sun Aug 22 02:07:55 2021] GET /opc/v1/identity => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/27] 132.145.98.193 () {36 vars in 500 bytes} [Sun Aug 22 02:07:55 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/29] 132.145.98.193 () {32 vars in 449 bytes} [Sun Aug 22 02:07:55 2021] GET /master.jsp => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+[pid: 7|app: -1|req: -1/29] 132.145.98.193 () {32 vars in 455 bytes} [Sun Aug 22 02:07:55 2021] GET /dfshealth.jsp => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/30] 132.145.98.193 () {32 vars in 442 bytes} [Sun Aug 22 02:07:55 2021] HEAD /health => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+[pid: 7|app: -1|req: -1/31] 132.145.98.193 () {32 vars in 451 bytes} [Sun Aug 22 02:07:55 2021] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/32] 132.145.98.193 () {36 vars in 544 bytes} [Sun Aug 22 02:07:55 2021] POST / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/33] 132.145.98.193 () {32 vars in 447 bytes} [Sun Aug 22 02:07:55 2021] GET /.git/HEAD => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/34] 132.145.98.193 () {32 vars in 459 bytes} [Sun Aug 22 02:07:55 2021] GET /tasktracker.jsp => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/35] 132.145.98.193 () {26 vars in 274 bytes} [Sun Aug 22 02:07:55 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/36] 132.145.98.193 () {32 vars in 429 bytes} [Sun Aug 22 02:07:55 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/37] 132.145.98.193 () {32 vars in 429 bytes} [Sun Aug 22 02:07:55 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/38] 132.145.98.193 () {32 vars in 455 bytes} [Sun Aug 22 02:07:55 2021] GET /spec/api.json => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/39] 132.145.98.193 () {32 vars in 505 bytes} [Sun Aug 22 02:07:55 2021] GET /console/css/%252E%252E%252Fconsole.portal => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/40] 132.145.98.193 () {32 vars in 459 bytes} [Sun Aug 22 02:07:55 2021] GET /opc/v1/instance => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/41] 132.145.98.193 () {36 vars in 501 bytes} [Sun Aug 22 02:07:55 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/42] 132.145.98.193 () {32 vars in 459 bytes} [Sun Aug 22 02:07:55 2021] GET /flumemaster.jsp => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/43] 132.145.98.193 () {32 vars in 433 bytes} [Sun Aug 22 02:07:55 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/44] 132.145.98.193 () {32 vars in 444 bytes} [Sun Aug 22 02:07:55 2021] HEAD /loggers => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/45] 132.145.98.193 () {28 vars in 302 bytes} [Sun Aug 22 02:07:56 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/46] 132.145.98.193 () {32 vars in 505 bytes} [Sun Aug 22 02:07:56 2021] GET /console/css/%252e%252e%252fconsole.portal => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/47] 132.145.98.193 () {36 vars in 500 bytes} [Sun Aug 22 02:07:56 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/48] 132.145.98.193 () {32 vars in 430 bytes} [Sun Aug 22 02:07:56 2021] HEAD / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/49] 132.145.98.193 () {36 vars in 474 bytes} [Sun Aug 22 02:07:56 2021] PROPFIND / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/50] 132.145.98.193 () {32 vars in 444 bytes} [Sun Aug 22 02:07:56 2021] HEAD /metrics => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/51] 132.145.98.193 () {36 vars in 503 bytes} [Sun Aug 22 02:07:56 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/52] 132.145.98.193 () {34 vars in 455 bytes} [Sun Aug 22 02:07:56 2021] POST / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/53] 132.145.98.193 () {32 vars in 450 bytes} [Sun Aug 22 02:07:57 2021] HEAD /autoconfig => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/54] 132.145.98.193 () {36 vars in 502 bytes} [Sun Aug 22 02:07:57 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/55] 132.145.98.193 () {32 vars in 433 bytes} [Sun Aug 22 02:07:57 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/56] 132.145.98.193 () {32 vars in 446 bytes} [Sun Aug 22 02:07:57 2021] HEAD /heapdump => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/57] 132.145.98.193 () {36 vars in 504 bytes} [Sun Aug 22 02:07:57 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/58] 132.145.98.193 () {32 vars in 450 bytes} [Sun Aug 22 02:07:57 2021] HEAD /threaddump => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/59] 132.145.98.193 () {36 vars in 504 bytes} [Sun Aug 22 02:07:58 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/60] 132.145.98.193 () {36 vars in 502 bytes} [Sun Aug 22 02:07:58 2021] OPTIONS / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/61] 132.145.98.193 () {32 vars in 436 bytes} [Sun Aug 22 02:07:58 2021] HEAD /env => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/62] 132.145.98.193 () {32 vars in 438 bytes} [Sun Aug 22 02:07:58 2021] HEAD /info => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/63] 132.145.98.193 () {32 vars in 438 bytes} [Sun Aug 22 02:07:59 2021] HEAD /dump => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/64] 132.145.98.193 () {32 vars in 452 bytes} [Sun Aug 22 02:07:59 2021] HEAD /configprops => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/65] 132.145.98.193 () {32 vars in 446 bytes} [Sun Aug 22 02:08:00 2021] HEAD /mappings => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/66] 132.145.98.193 () {32 vars in 452 bytes} [Sun Aug 22 02:08:00 2021] HEAD /auditevents => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/67] 132.145.98.193 () {32 vars in 440 bytes} [Sun Aug 22 02:08:01 2021] HEAD /beans => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/68] 132.145.98.193 () {32 vars in 444 bytes} [Sun Aug 22 02:08:01 2021] HEAD /jolokia => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/69] 132.145.98.193 () {32 vars in 476 bytes} [Sun Aug 22 02:08:02 2021] HEAD /cloudfoundryapplication => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/70] 132.145.98.193 () {32 vars in 458 bytes} [Sun Aug 22 02:08:02 2021] HEAD /hystrix.stream => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/71] 132.145.98.193 () {32 vars in 446 bytes} [Sun Aug 22 02:08:03 2021] HEAD /actuator => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/72] 132.145.98.193 () {32 vars in 470 bytes} [Sun Aug 22 02:08:03 2021] HEAD /actuator/auditevents => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/73] 132.145.98.193 () {32 vars in 458 bytes} [Sun Aug 22 02:08:03 2021] HEAD /actuator/beans => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/74] 132.145.98.193 () {32 vars in 460 bytes} [Sun Aug 22 02:08:04 2021] HEAD /actuator/health => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/75] 132.145.98.193 () {32 vars in 468 bytes} [Sun Aug 22 02:08:04 2021] HEAD /actuator/conditions => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/76] 132.145.98.193 () {32 vars in 470 bytes} [Sun Aug 22 02:08:05 2021] HEAD /actuator/configprops => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/77] 132.145.98.193 () {32 vars in 454 bytes} [Sun Aug 22 02:08:06 2021] HEAD /actuator/env => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/78] 132.145.98.193 () {32 vars in 456 bytes} [Sun Aug 22 02:08:06 2021] HEAD /actuator/info => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/79] 132.145.98.193 () {32 vars in 462 bytes} [Sun Aug 22 02:08:06 2021] HEAD /actuator/loggers => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/80] 132.145.98.193 () {32 vars in 464 bytes} [Sun Aug 22 02:08:07 2021] HEAD /actuator/heapdump => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/81] 132.145.98.193 () {32 vars in 468 bytes} [Sun Aug 22 02:08:07 2021] HEAD /actuator/threaddump => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/82] 132.145.98.193 () {32 vars in 462 bytes} [Sun Aug 22 02:08:08 2021] HEAD /actuator/metrics => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/83] 132.145.98.193 () {32 vars in 476 bytes} [Sun Aug 22 02:08:08 2021] HEAD /actuator/scheduledtasks => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/84] 132.145.98.193 () {32 vars in 466 bytes} [Sun Aug 22 02:08:09 2021] HEAD /actuator/httptrace => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/85] 132.145.98.193 () {32 vars in 464 bytes} [Sun Aug 22 02:08:09 2021] HEAD /actuator/mappings => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/86] 132.145.98.193 () {32 vars in 462 bytes} [Sun Aug 22 02:08:09 2021] HEAD /actuator/jolokia => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/87] 132.145.98.193 () {32 vars in 476 bytes} [Sun Aug 22 02:08:10 2021] HEAD /actuator/hystrix.stream => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/88] 132.145.98.193 () {42 vars in 632 bytes} [Sun Aug 22 02:08:10 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/89] 132.145.98.193 () {40 vars in 683 bytes} [Sun Aug 22 02:08:11 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 7|app: -1|req: -1/90] 192.241.200.116 () {34 vars in 394 bytes} [Sun Aug 22 02:10:48 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Aug 22 05:02:03 2021] ***
+compiled with version: 8.3.0 on 21 August 2021 15:24:17
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: 1bccf3be6dc4
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x560af5b41170
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 9, cores: 2)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Aug 23 13:56:58 2021] ***
+compiled with version: 8.3.0 on 23 August 2021 13:55:12
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: f9df2552da95
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55599742c200
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 8, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/1] 211.222.161.240 () {42 vars in 885 bytes} [Mon Aug 23 13:58:13 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/2] 211.222.161.240 () {42 vars in 845 bytes} [Mon Aug 23 13:58:14 2021] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/3] 211.222.161.240 () {44 vars in 916 bytes} [Mon Aug 23 13:59:02 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/4] 211.222.161.240 () {46 vars in 898 bytes} [Mon Aug 23 13:59:02 2021] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/5] 211.222.161.240 () {42 vars in 899 bytes} [Mon Aug 23 13:59:08 2021] GET /crinity => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/6] 211.222.161.240 () {42 vars in 852 bytes} [Mon Aug 23 13:59:08 2021] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/7] 211.222.161.240 () {42 vars in 885 bytes} [Mon Aug 23 13:59:32 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/8] 211.222.161.240 () {42 vars in 845 bytes} [Mon Aug 23 13:59:32 2021] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/9] 211.222.161.240 () {44 vars in 916 bytes} [Mon Aug 23 13:59:56 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 8|app: -1|req: -1/10] 211.222.161.240 () {46 vars in 898 bytes} [Mon Aug 23 13:59:56 2021] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Aug 23 14:01:23 2021] ***
+compiled with version: 8.3.0 on 23 August 2021 13:55:12
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: f9df2552da95
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x558d8ddb0170
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 10, cores: 2)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Aug 23 14:01:37 2021] ***
+compiled with version: 8.3.0 on 23 August 2021 13:55:12
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: f9df2552da95
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55edc6177200
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 9, cores: 2)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Aug 23 14:02:22 2021] ***
+compiled with version: 8.3.0 on 23 August 2021 13:55:12
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: f9df2552da95
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5603a4f25170
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Aug 23 14:02:36 2021] ***
+compiled with version: 8.3.0 on 23 August 2021 13:55:12
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: f9df2552da95
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55f353bc6200
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 9, cores: 2)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Aug 23 14:02:54 2021] ***
+compiled with version: 8.3.0 on 23 August 2021 13:55:12
+os: Linux-5.8.0-1037-oracle #38~20.04.1-Ubuntu SMP Fri Jul 16 01:02:14 UTC 2021
+nodename: f9df2552da95
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.8 (default, Mar 31 2021, 12:29:49)  [GCC 8.3.0]
+Python main interpreter initialized at 0x56084600c170
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+ModuleNotFoundError: No module named 'server_dev'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
