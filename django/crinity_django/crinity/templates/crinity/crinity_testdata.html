@@ -50,7 +50,7 @@
 <div id="app6">
     <p>[[ message ]]</p>
     <input v-model="message">
-    <button v-on:click="alert">[[message]]</button>
+    <button v-on:click="">[[message]]</button>
 </div>
 <hr>
 <div id="app_crinity">
@@ -64,36 +64,63 @@
     <button v-on:click="getParam">테스트 데이터 출력</button>
     <button v-on:click="submit">테스트 데이터 추출(Excel)</button>
 </div>
+{% csrf_token %}
 
+
+<div id="app7">
+    <ol>
+        <todo-item 
+            v-for="item in groceryList"
+            v-bind:todo="item"
+            v-bind:key="item.id"
+        />
+    </ol>
+</div>
 
 <!-- vue.js script-->
 <script>
+    Vue.options.delimiters = ['[[', ']]'];
+    Vue.component('todo-item', {
+        props : ['todo'],
+        template : '<li>[[ todo.text ]] </li>'
+    })
+
+    var app7 = new Vue({
+        el : '#app7',
+        data : {
+            groceryList : [
+                {id : 0, text : 'Vegetables'},
+                {id : 1, text : 'Cheese'},
+                {id : 2, text : 'Whatever else humans are supposed to eat'},
+            ]
+        }
+    })
+
     var app_crinity = new Vue({
         delimiters : ['[[', ']]'],
         el : "#app_crinity",
         data : {
             row : "",
             column : "",
-            domain : ""
+            domain : "",
         },
         methods : {
             getParam : function(){
                 alert("입력한 행은 " + this.column + " 이며, 입력한 열은 " + this.row + " 이며, 기초 데이터는 "+ this.domain +" 입니다.")
-            },
-            inputData(row, column, domain) : function(row, column, domain){
-                alert(row);
-
-            },
-            view : function() {
+                // create table
 
             },
             submit : function(){
-                axios.defaults.xsrfCookieName ='csrftoken'
-                axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-                axios.post("http://132.226.232.239:8000/crinity/testdata", {
+                debugger;
+                var csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+                //axios.defaults.withCredentials = true;
+                axios.post("http://127.0.0.1:8000/crinity/testdata", {
                     row : this.row,
                     column : this.column,
                     domain : this.domain
+                }, { headers : {
+                    'X-CSRFToken' : csrftoken
+                    }
                 })
                 .then(function(response){
                     row = response.data["row"];
@@ -105,9 +132,28 @@
                     alert(error.message);
                 });
             },
-
         }
     })
+
+    function inputData(row, column, domain){
+        alert("row is " + row);
+    }
+
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
 
     var app = new Vue({
         // django 와 vue.js는 같은 콧수염 태그를 사용하기 때문에 구분자를 변경해주어야 한다.
